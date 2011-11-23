@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* Free css docuement by Templatesperfect.com
+Template: Corporate Plus
+ Author Paarth */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background-color: transparent;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+
+
+html {background: white; font-size: 100%}
+/*------------------ Site Structure ------------------*/
+
+body {width: 980px; margin: auto; font-family:Tahoma, Geneva, sans-serif; font-size: 12px; color: #666}
+
+#header {height: 120px;}
+
+#logo {height: 110px; width:980px; background: url(images/logo.jpg) no-repeat; float:left}
+
+#social {position:fixed ;width:40px; height:190px; left:0px;bottom:200px;  margin-top: 5px;z-index:1000}
+
+#content {
+	width: 640px;
+	float: left;
+	margin-bottom: 44px;
+}
+
+#sidebar {
+	width: 260px; 
+	padding: 20px;
+	float: right;
+	border: 1px solid #dcdcdc;
+	margin-bottom: 44px
+}
+
+#sidebar h3, .sidebar_box {
+	background: #8cb501; 
+	padding: 5px 10px; 
+	margin-bottom: 15px;
+	border: 1px solid #FFF;
+	outline:1px solid #dcdcdc;
+	color:white;
+}
+
+/* sidebar menu */
+
+
+.navcontainer { width: 280px; margin-bottom: 25px }
+
+.navcontainer ul{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.navcontainer a {
+	display: block;
+	padding: 10px 10px;
+	width: 240px;
+	background: url(images/seperator.png) repeat-x bottom;
+}
+
+.navcontainer a:link, .navlist a:visited {
+	text-decoration: none;
+
+}
+
+.navcontainer a:hover{
+	color: #000;
+	
+}
+
+img { float:left; margin:4px; }
+/* end sidebar menu */
+
+#intro {
+	
+	clear: both;
+	padding: 20px;
+	font-size: 1em; 
+	line-height: 1.6em; 
+	margin-bottom: 24px;
+	
+	background: #eaeaea
+	text-align:center;
+}
+
+#intro span {font-weight: 700}
+
+#intro p {padding: 0}
+
+#box_left {width: 300px; float: left; margin-bottom: 44px; text-align: justify}
+#box_right {width: 300px; float: right; margin-bottom: 44px; text-align: justify}
+#box_middle {margin-left: 330px; margin-right: 330px; margin-bottom: 44px; text-align: justify;line-height:10px;}
+
+#box_left h3, #box_right h3, #box_middle h3 {
+	background: #8cb501;
+	font-weight: normal;
+	margin-bottom: 25px;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	font-size: 1.4em;
+	padding: 8px 15px;
+	border: 1px solid #FFF;
+	outline:1px solid #dcdcdc;
+	color:white;
+}
+
+#credit {clear: both; padding: 10px; text-align: right; background: url(images/seperator.png) repeat-x top; font-size: .9em; color: #a3a3a3}
+
+#credit img { float:right; margin:0; }
+
+
+/* global links */
+
+a {text-decoration: none; color: #740000}
+
+/* text styles */
+
+h1 {font-size: 2em; font-weight: normal; padding-bottom: 10px}
+h2 {font-size: 1.6em; font-weight: normal; padding-bottom: 6px}
+h3, h4 {font-size: 1.4em; font-weight: normal}
+h5, h6  {font-size: 1.2em}
+
+p {line-height: 20px; padding-bottom: 25px}
+
+/* images */
+
+.more {float: right; margin-right: 10px}
+
+
+/*---------------    Slider    ---------------*/
+.slider { width: 980px; height: 300; border: 0px solid #dbdbdb; position: relative; margin: 0px 0 0px 0; background:#FFF;}
+.slider .item { position: relative; width: 980px; height: 290px; }
+.slider .item img { position: absolute; top:0;left:0; z-index: 1; }
+/*.slider .text { position: absolute; top:80px;left:480px; z-index: 2; }
+.slider .text h3 { font-size: 45px; line-height: 45px; color: #ff0000; padding: 0 0 0 7px; }
+.slider .text h2 { font-size: 58px; line-height: 58px; color: #39393d; text-transform: uppercase; padding: 0 0 0 2px; }
+*/
+.slider-nav { width: 92px; height: 18px; position: absolute; bottom:9px;right:6px; z-index: 3; }
+.slider-nav a { width: 18px; height: 18px; background: #d7d7d8; margin: 0 5px 0 0; }
+.slider-nav a.active { background: #39393d; }
+
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+/*-----------------------------------------------*/
+/*---------------    Dropdown    ---------------*/
+/*---------------------------------------------*/
+
+/* 
+	LEVEL ONE
+*/
+
+ul.dropdown                         { position: relative; z-index:10; margin: auto; border-top: 1px solid #dbdbdb;
+	                                  border-bottom: 1px solid #dbdbdb; height:36px; background:#8cb501; margin-bottom: 10px;}/*eaeaea*/
+									  
+ul.dropdown li                      { float: left; zoom: 1;  }
+ul.dropdown a:hover		            { color: ; }
+ul.dropdown a:active                { color: ; }
+ul.dropdown li a                    { display: block; padding: 9px 20px;
+	 								  color: #FFF; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { color: #666; position: relative; }
+ul.dropdown li.hover a              { color: #fff; 	background:#8cb501;}
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; background: #eaeaea;
+                                      border-left: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb}
+ul.dropdown ul li 					{ font-weight: normal; background: url(images/dropdown.png);  color: #000; 
+									  border-bottom: 1px solid #dbdbdb; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; background: none; padding: 9px 8px; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; z-index:300; border-top: 1px solid #dbdbdb }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+/* ----------------------------------------------Footer-------------------------------------*/
+
+
+
+#footer{
+	margin:0 auto;
+		float:left;
+		padding:10px 20px;
+		width:940px;
+		background-color:white;
+		border-top:2px solid #eee;
+		color:#666;
+	}
+	
+
+#footer ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#footer h2{
+	margin:0 0 15px 0;
+	padding:5 5 8px 0;
+	font-size:18px;
+	color:#666;
+	
+	border-bottom:1px dotted #CCCCCC;
+	}
+.smallbox
+{
+font-size:1.4em;
+color:#8cb501;
+text-decoration:underline;
+
+}
+	
+#footer .box{
+	display:block;
+	float:right;
+	width:250px;
+	margin:0 0 0 25px;
+	padding:0;
+	}
+
+#footer .box1{
+	display:block;
+	float:left;
+	width:390px;
+	line-height:1.6em;
+	}
+
+#footer .box1 .imgl{border:1px solid #CCCCCC; padding:5px; color:#FFFFFF; }
+
+#footer .contactdetails li{
+	margin:0 0 8px 0;
+		padding:0 0 0 15px;
+	color:#333;
+	font:Arial, Helvetica, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+		font-weight:400;
+	}
+
+#footer .projectbox, #footer .projectbox .wrap{display:block; width:260px; float:left; margin-left:10px;}
+#footer .projectbox .wrap .fix{clear:both;}
+#footer .projectbox .wrap .project_badge_image{display:block; float:left; margin:0 10px 10px 0; width:80px; height:80px;}
+#footer .projectbox .wrap #project_badge_image3, #footer .projectbox .wrap #project_badge_image6{margin-right:0;}
+#footerWrap { margin-top:15px;width:100%;height:100px;clear:both; border-top-radius:10px;}
+.imgl, .imgr{border:1px solid #999999; padding:5px;}
+.imgl{float:left; margin:0 8px 8px 0; clear:left;}
+.imgr{float:right; margin:0 0 8px 8px; clear:right;}
+
+.clear{ clear:both}
